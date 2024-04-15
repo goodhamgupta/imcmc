@@ -89,6 +89,17 @@ ImageLines(karwendel, GibbsIntensityStrategy()).plot(1_000)
 
 ![karwendel](examples/karwendel.jpg)
 
+Docker
+----------
+
+To avoid running into missing libraries/cython compilation issues, you can run the notebook with docker using the following commands:
+
+```sh
+docker build -t imcmc .
+docker run -p 8891:8891 -v "$(pwd)":/usr/src/app imcmc
+```
+```
+
 Built with
 ----------
 
